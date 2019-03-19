@@ -9,12 +9,8 @@
 
 export default {
 
-    primariaVermelha: '#cc2c20',
-    //primariaVermelha: '#f13140',
-    primariaVerde: '#018249',
-
-    secundaria1: '#270757',
-    secundaria2: '#ff007b',
+    primaria: '#0145a2',
+    secundaria: '#00b8dd',
 
     premium: '#deecff',
 
