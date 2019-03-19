@@ -12,7 +12,7 @@ export default class homeScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>HOME!</Text>
       </View>
     );
   }
