@@ -4,15 +4,26 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, StatusBar, ScrollView} from 'react-native';
 
+//COMPONENTES
+import Header from './components/Header';
+
+//MEDIDAS
+import { colors, font, metrics, ad } from './styles';
 
 type Props = {};
 export default class homeScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>HOME!</Text>
+        <StatusBar backgroundColor={colors.primaria} barStyle="light-content" />
+        <Header simple > MISSÕES FORTNITE </Header>
+
+        <ScrollView> 
+        
+        
+        </ScrollView>
       </View>
     );
   }
@@ -21,14 +32,13 @@ export default class homeScreen extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    fontFamily:'Burbank'
   },
 
 });

@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         paddingTop: metrics.headerPadding,
         paddingHorizontal: metrics.padding,
         alignItems: 'center',
-        backgroundColor: colors.primariaVermelha,
+        backgroundColor: colors.primaria,
         justifyContent: 'space-between',
     },
     container_back:{
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     title:{
         fontSize: font.header,
         color: colors.branco,
+        fontFamily: 'Burbank',
     },
     icon:{
         fontSize: font.iconHeader,

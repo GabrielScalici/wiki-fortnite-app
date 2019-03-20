@@ -9,21 +9,17 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import styles from './styles';
 
-import logo from '../../../img/logo_so.png'
-
 //COMPONENTES
 
-const Header = ({ onPress, children, onPressN, back, simple }) => {
+const Header = ({ onPress, children, simple }) => {
 
 
     if (simple) {
         return (
             <View style={styles.container}>
-
-                <Image
-                    style={styles.image}
-                    source={logo}
-                />
+                
+                <View style={{ width: 40 }}>
+                </View>
 
                 <Text style={styles.title}>{children}</Text>
 
@@ -32,47 +28,6 @@ const Header = ({ onPress, children, onPressN, back, simple }) => {
 
             </View>
         )
-
-    } else {
-        if (back) {
-            return (
-                <View style={styles.container_back}>
-
-                    <TouchableOpacity
-                        style={styles.container_icon}
-                        onPress={onPress}>
-                        <Icon name={"angle-left"} style={styles.icon} />
-                    </TouchableOpacity>
-
-                    <Text style={styles.title}>{children}</Text>
-
-                    <View style={{ width: 20 }}>
-                    </View>
-
-
-                </View>
-            )
-        } else {
-            return (
-                <View style={styles.container}>
-
-                    <Image
-                        style={styles.image}
-                        source={logo}
-                    />
-
-                    <Text style={styles.title}>{children}</Text>
-
-                    <TouchableOpacity
-                        style={styles.container_icon}
-                        onPress={onPress}>
-                        <Icon name={"cogs"} style={styles.icon} />
-                    </TouchableOpacity>
-
-
-                </View>
-            )
-        }
     }
 
 };

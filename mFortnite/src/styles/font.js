@@ -9,7 +9,7 @@
 
 export default{
 
-    header: 20,
+    header: 28,
     title: 25,
     titleList: 22,
     subtitle: 18,
