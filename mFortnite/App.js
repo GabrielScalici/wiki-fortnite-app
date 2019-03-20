@@ -24,7 +24,7 @@ const PrimaryNav = StackNavigator({
     // Default config for all screens
     headerMode: 'none',
     //title: 'Main',
-    initialRouteName: 'homeScreen',
+    initialRouteName: 'missionScreen',
 });
 
 export default PrimaryNav
