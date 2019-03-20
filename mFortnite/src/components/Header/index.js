@@ -11,13 +11,13 @@ import styles from './styles';
 
 //COMPONENTES
 
-const Header = ({ onPress, children, simple }) => {
+const Header = ({ onPress, children, onPressN, back, simple }) => {
 
 
     if (simple) {
         return (
             <View style={styles.container}>
-                
+
                 <View style={{ width: 40 }}>
                 </View>
 
@@ -28,6 +28,27 @@ const Header = ({ onPress, children, simple }) => {
 
             </View>
         )
+
+    } else {
+        if (back) {
+            return (
+                <View style={styles.container_back}>
+
+                    <TouchableOpacity
+                        style={styles.container_icon}
+                        onPress={onPress}>
+                        <Icon name={"angle-left"} style={styles.icon} />
+                    </TouchableOpacity>
+
+                    <Text style={styles.title}>{children}</Text>
+
+                    <View style={{ width: 20 }}>
+                    </View>
+
+
+                </View>
+            )
+        }
     }
 
 };

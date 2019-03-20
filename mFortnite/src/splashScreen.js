@@ -4,15 +4,22 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
+//MEDIDAS
+import { colors, metrics, font } from './styles';
+
+//IMAGENS
+import star from '../img/star.png';
 
 type Props = {};
 export default class splashScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>SPLASH</Text>
+            <Image source={star} style={styles.image}/>
+            <Text style={styles.title}> Missões do Fortnite</Text>
+            <Text style={styles.subtitle}> Winkazi </Text>
       </View>
     );
   }
@@ -23,12 +30,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: colors.primaria,
   },
-  welcome: {
-    fontSize: 20,
+  title: {
+    fontSize: 60,
     textAlign: 'center',
     margin: 10,
+    fontFamily: 'Burbank',
+    color: 'white'
   },
+  subtitle:{
+    fontSize: 30,
+    textAlign: 'center',
+    margin: 10,
+    fontFamily: 'Burbank',
+    color: 'white'
+  },
+  image:{
+      height: 200,
+      width: 200,
+  }
 
 });
