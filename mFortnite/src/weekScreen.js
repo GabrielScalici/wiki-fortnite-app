@@ -19,7 +19,7 @@ export default class weekScreen extends Component<Props> {
             <View style={styles.container}>
                 <StatusBar backgroundColor={colors.primaria} barStyle="light-content" />
                 <Header
-                    onPress={() => { }}
+                    onPress={() => { this.props.navigation.goBack(null);}}
                     back > SEMANA </Header>
                 <ScrollView>
 

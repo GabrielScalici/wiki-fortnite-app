@@ -32,7 +32,7 @@ const Header = ({ onPress, children, onPressN, back, simple }) => {
     } else {
         if (back) {
             return (
-                <View style={styles.container_back}>
+                <View style={styles.container}>
 
                     <TouchableOpacity
                         style={styles.container_icon}

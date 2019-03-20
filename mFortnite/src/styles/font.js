@@ -11,7 +11,7 @@ export default{
 
     header: 28,
     title: 25,
-    titleList: 22,
+    titleList: 40,
     subtitle: 18,
     body: 16,
     subtitleSmall: 16,
