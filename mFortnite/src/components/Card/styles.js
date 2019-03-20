@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: metrics.double_padding,
         margin: metrics.padding,
-        backgroundColor: colors.primaria
+        backgroundColor: colors.secundaria
     },
     child: {
         width: widthS - metrics.double_padding,

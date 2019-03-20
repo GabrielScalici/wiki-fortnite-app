@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, StatusBar, ScrollView } from 'react-native';
+import SortableList from 'react-native-sortable-list';
 
 //COMPONENTES
 import Header from './components/Header';
@@ -19,9 +20,10 @@ export default class weekScreen extends Component<Props> {
             <View style={styles.container}>
                 <StatusBar backgroundColor={colors.primaria} barStyle="light-content" />
                 <Header
-                    onPress={() => { this.props.navigation.goBack(null);}}
+                    onPress={() => { this.props.navigation.goBack(null); }}
                     back > SEMANA </Header>
                 <ScrollView>
+
 
                 </ScrollView>
             </View>
